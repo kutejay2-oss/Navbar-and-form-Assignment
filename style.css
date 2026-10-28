@@ -1,360 +1,85 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
-  background-color: #f4f6f8;
-  padding: 30px 10px;
-}
-
-.assignment-container {
-  max-width: 1100px;
-  margin: 0 auto;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background-color: #f4f4f4;
   display: flex;
-  flex-direction: column;
-  gap: 35px;
-}
-
-.section h2 {
-  font-size: 20px;
-  color: #333;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-
-.whatsapp-navbar {
-  background-color: #202c33;
-  color: #e9edef;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 16px;
-  border-radius: 4px;
-}
-
-.wa-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  overflow: hidden;
-}
-
-.wa-avatar {
-  width: 40px;
-  height: 40px;
-  background-color: #6b7c85;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 18px;
-  flex-shrink: 0;
-}
-
-.wa-info h3 {
-  font-size: 15px;
-  font-weight: 500;
-}
-
-.wa-info p {
-  font-size: 11px;
-  color: #8696a0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 500px;
-}
-
-.wa-right {
-  display: flex;
   align-items: center;
-  gap: 18px;
+  min-height: 100vh;
+  margin: 0;
 }
 
-.wa-btn {
-  background-color: #2a3942;
-  color: #d1d7db;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 15px;
-  font-size: 12px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.wa-right .icon {
-  color: #aebac1;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.linkedin-navbar {
+.form-card {
+  border: 1px solid #c8c8c8;
+  padding: 40px 50px;
   background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  height: 52px;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.ln-left {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.ln-logo {
-  font-size: 34px;
-  color: #0a66c2;
-}
-
-.ln-search {
-  background-color: #edf2f7;
-  display: flex;
-  align-items: center;
-  padding: 6px 10px;
-  border-radius: 4px;
-  gap: 8px;
-  color: #666;
-}
-
-.ln-search input {
-  border: none;
-  background: transparent;
-  outline: none;
-  font-size: 13px;
-  width: 180px;
-}
-
-.ln-right {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-}
-
-.ln-nav-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #666666;
-  font-size: 11px;
-  cursor: pointer;
-  position: relative;
-}
-
-.ln-nav-item i {
-  font-size: 18px;
-  margin-bottom: 3px;
-}
-
-.ln-nav-item.active {
-  color: #000000;
-  border-bottom: 2px solid #000;
-  padding-bottom: 4px;
-}
-
-.badge-container {
-  position: relative;
-}
-
-.badge {
-  position: absolute;
-  top: -4px;
-  right: -10px;
-  background-color: #cc1011;
-  color: white;
-  font-size: 9px;
-  padding: 1px 4px;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-.divider {
-  width: 1px;
-  height: 35px;
-  background-color: #e0e0e0;
-}
-
-.premium-link {
-  font-size: 11px;
-  color: #915907;
-  text-decoration: underline;
-  max-width: 80px;
-  text-align: center;
-}
-
-/* ================= 3. BookMyShow Navbar ================= */
-.bms-container {
-  background-color: #333545;
-}
-
-.bms-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.bms-left {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  flex-grow: 1;
-}
-
-.bms-logo {
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 20px;
-  font-style: italic;
-}
-
-.bms-logo span {
-  background-color: #f84464;
-  padding: 2px 4px;
-  border-radius: 2px;
-  font-style: normal;
-  font-size: 14px;
-}
-
-.bms-search {
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  padding: 6px 12px;
-  border-radius: 4px;
-  width: 50%;
-  gap: 10px;
-  color: #888;
-}
-
-.bms-search input {
-  border: none;
-  outline: none;
   width: 100%;
-  font-size: 12px;
+  max-width: 450px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
 }
 
-.bms-right {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  color: #cccccc;
-  font-size: 12px;
-}
-
-.signin-btn {
-  background-color: #f84464;
-  color: white;
-  border: none;
-  padding: 4px 12px;
-  border-radius: 4px;
-  font-size: 12px;
-  cursor: pointer;
-}
-
-.hamburger {
-  font-size: 16px;
-  cursor: pointer;
-  color: #ffffff;
-}
-
-.bms-bottom {
-  background-color: #1f2533;
-  display: flex;
-  justify-content: space-between;
-  padding: 8px 20px;
-  font-size: 12px;
-}
-
-.bms-links a, .bms-links-right a {
-  color: #cccccc;
-  text-decoration: none;
-  margin-right: 15px;
-}
-
-.bms-links a:hover, .bms-links-right a:hover {
-  color: #ffffff;
-}
-
-/* ================= 4. Wisdom Sprouts Navbar ================= */
-.ws-navbar {
-  background-color: #c9e6e5;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.ws-logo .logo-box {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
-  color: #0b625d;
+h1 {
+  font-size: 32px;
   font-weight: bold;
-}
-
-.ws-logo span:nth-child(1) { font-size: 14px; }
-.ws-logo span:nth-child(2) { font-size: 16px; letter-spacing: 1px; }
-.ws-logo small { font-size: 8px; color: #333; font-weight: normal; }
-
-.ws-menu {
-  display: flex;
-  gap: 18px;
-}
-
-.ws-menu a {
-  text-decoration: none;
-  color: #0b625d;
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.ws-btn {
-  background-color: #e35a42;
-  color: white;
-  border: none;
-  padding: 8px 18px;
-  border-radius: 20px;
-  font-size: 12px;
-  cursor: pointer;
-}
-
-/* ================= 5. Instagram Footer ================= */
-.insta-footer {
-  background-color: #001f3f; /* Dark blue background from the reference image */
-  padding: 25px 20px;
-  text-align: center;
-  font-size: 11px;
-}
-
-.insta-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
+  color: #1a2936;
+  margin-top: 0;
   margin-bottom: 15px;
 }
 
-.insta-links a {
-  color: #a8b3cf;
-  text-decoration: none;
+.subtitle {
+  font-size: 18px;
+  color: #222222;
+  margin-bottom: 25px;
 }
 
-.insta-links a:hover {
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  color: #1a2936;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #767676;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #888888;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #dedede;
+  border: 1px solid #767676;
+  font-size: 16px;
+  color: #1a2936;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.submit-btn:hover {
+  background-color: #cccccc;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 18px;
+  color: #333333;
+}
+
+.footer-text a {
+  color: #0056b3;
   text-decoration: underline;
-}
-
-.insta-copyright {
-  color: #a8b3cf;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
 }
